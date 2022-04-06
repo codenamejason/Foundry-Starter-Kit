@@ -1,0 +1,1059 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "parameters",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "factory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        },
+        {
+          "internalType": "int24",
+          "name": "tickSpacing",
+          "type": "int24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060e18061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638903573014602d575b600080fd5b60336075565b604080516001600160a01b0396871681529486166020860152929094168383015262ffffff16606083015260029290920b608082015290519081900360a00190f35b600054600154600280546001600160a01b03938416939283169281169162ffffff600160a01b83041691600160b81b9004900b8556fea2646970667358221220bcc5e979099f9e96d9fa3425ff64ab50a3457f003e266f2056cff04b02dbffe964736f6c63430007060033",
+    "sourceMap": "144:1385:5:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638903573014602d575b600080fd5b60336075565b604080516001600160a01b0396871681529486166020860152929094168383015262ffffff16606083015260029290920b608082015290519081900360a00190f35b600054600154600280546001600160a01b03938416939283169281169162ffffff600160a01b83041691600160b81b9004900b8556fea2646970667358221220bcc5e979099f9e96d9fa3425ff64ab50a3457f003e266f2056cff04b02dbffe964736f6c63430007060033",
+    "sourceMap": "144:1385:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;401:37;;;:::i;:::-;;;;-1:-1:-1;;;;;401:37:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;401:37:5;;;;;;;;;;;;-1:-1:-1;;;401:37:5;;;;-1:-1:-1;;;401:37:5;;;;;:::o",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/supernovahs/Desktop/foundrystarterkit/Foundry-Starter-Kit/packages/hardhat/contracts/UniswapV3PoolDeployer.sol",
+    "exportedSymbols": {
+      "BitMath": [
+        6280
+      ],
+      "FixedPoint128": [
+        6287
+      ],
+      "FixedPoint96": [
+        6297
+      ],
+      "FullMath": [
+        6470
+      ],
+      "IERC20Minimal": [
+        5416
+      ],
+      "IUniswapV3Factory": [
+        5499
+      ],
+      "IUniswapV3FlashCallback": [
+        5553
+      ],
+      "IUniswapV3MintCallback": [
+        5567
+      ],
+      "IUniswapV3Pool": [
+        5521
+      ],
+      "IUniswapV3PoolActions": [
+        5677
+      ],
+      "IUniswapV3PoolDeployer": [
+        5539
+      ],
+      "IUniswapV3PoolDerivedState": [
+        5708
+      ],
+      "IUniswapV3PoolEvents": [
+        5827
+      ],
+      "IUniswapV3PoolImmutables": [
+        5867
+      ],
+      "IUniswapV3PoolOwnerActions": [
+        5893
+      ],
+      "IUniswapV3PoolState": [
+        6001
+      ],
+      "IUniswapV3SwapCallback": [
+        5581
+      ],
+      "LiquidityMath": [
+        6522
+      ],
+      "LowGasSafeMath": [
+        6652
+      ],
+      "NoDelegateCall": [
+        221
+      ],
+      "Oracle": [
+        7387
+      ],
+      "Position": [
+        7560
+      ],
+      "SafeCast": [
+        7630
+      ],
+      "SqrtPriceMath": [
+        8146
+      ],
+      "SwapMath": [
+        8407
+      ],
+      "Tick": [
+        8859
+      ],
+      "TickBitmap": [
+        9115
+      ],
+      "TickMath": [
+        9650
+      ],
+      "TransferHelper": [
+        9701
+      ],
+      "UniswapV3Pool": [
+        3222
+      ],
+      "UniswapV3PoolDeployer": [
+        3292
+      ],
+      "UnsafeMath": [
+        9717
+      ]
+    },
+    "id": 3293,
+    "license": "BUSL-1.1",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3224,
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:23:5"
+      },
+      {
+        "absolutePath": "/home/supernovahs/Desktop/foundrystarterkit/Foundry-Starter-Kit/packages/hardhat/contracts/interfaces/IUniswapV3PoolDeployer.sol",
+        "file": "./interfaces/IUniswapV3PoolDeployer.sol",
+        "id": 3225,
+        "nodeType": "ImportDirective",
+        "scope": 3293,
+        "sourceUnit": 5540,
+        "src": "62:49:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/supernovahs/Desktop/foundrystarterkit/Foundry-Starter-Kit/packages/hardhat/contracts/UniswapV3Pool.sol",
+        "file": "./UniswapV3Pool.sol",
+        "id": 3226,
+        "nodeType": "ImportDirective",
+        "scope": 3293,
+        "sourceUnit": 3223,
+        "src": "113:29:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3227,
+              "name": "IUniswapV3PoolDeployer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5539,
+              "src": "178:22:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IUniswapV3PoolDeployer_$5539",
+                "typeString": "contract IUniswapV3PoolDeployer"
+              }
+            },
+            "id": 3228,
+            "nodeType": "InheritanceSpecifier",
+            "src": "178:22:5"
+          }
+        ],
+        "contractDependencies": [
+          3222,
+          5539
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3292,
+        "linearizedBaseContracts": [
+          3292,
+          5539
+        ],
+        "name": "UniswapV3PoolDeployer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "UniswapV3PoolDeployer.Parameters",
+            "id": 3239,
+            "members": [
+              {
+                "constant": false,
+                "id": 3230,
+                "mutability": "mutable",
+                "name": "factory",
+                "nodeType": "VariableDeclaration",
+                "scope": 3239,
+                "src": "235:15:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3229,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "235:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3232,
+                "mutability": "mutable",
+                "name": "token0",
+                "nodeType": "VariableDeclaration",
+                "scope": 3239,
+                "src": "260:14:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3231,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "260:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3234,
+                "mutability": "mutable",
+                "name": "token1",
+                "nodeType": "VariableDeclaration",
+                "scope": 3239,
+                "src": "284:14:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3233,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "284:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3236,
+                "mutability": "mutable",
+                "name": "fee",
+                "nodeType": "VariableDeclaration",
+                "scope": 3239,
+                "src": "308:10:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 3235,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "308:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3238,
+                "mutability": "mutable",
+                "name": "tickSpacing",
+                "nodeType": "VariableDeclaration",
+                "scope": 3239,
+                "src": "328:17:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int24",
+                  "typeString": "int24"
+                },
+                "typeName": {
+                  "id": 3237,
+                  "name": "int24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "328:5:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Parameters",
+            "nodeType": "StructDefinition",
+            "scope": 3292,
+            "src": "207:145:5",
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              5538
+            ],
+            "constant": false,
+            "documentation": {
+              "id": 3240,
+              "nodeType": "StructuredDocumentation",
+              "src": "358:38:5",
+              "text": "@inheritdoc IUniswapV3PoolDeployer"
+            },
+            "functionSelector": "89035730",
+            "id": 3243,
+            "mutability": "mutable",
+            "name": "parameters",
+            "nodeType": "VariableDeclaration",
+            "overrides": {
+              "id": 3242,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "419:8:5"
+            },
+            "scope": 3292,
+            "src": "401:37:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Parameters_$3239_storage",
+              "typeString": "struct UniswapV3PoolDeployer.Parameters"
+            },
+            "typeName": {
+              "id": 3241,
+              "name": "Parameters",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3239,
+              "src": "401:10:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Parameters_$3239_storage_ptr",
+                "typeString": "struct UniswapV3PoolDeployer.Parameters"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3290,
+              "nodeType": "Block",
+              "src": "1155:372:5",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3267,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3259,
+                      "name": "parameters",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3243,
+                      "src": "1165:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Parameters_$3239_storage",
+                        "typeString": "struct UniswapV3PoolDeployer.Parameters storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 3261,
+                          "name": "factory",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3246,
+                          "src": "1212:7:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 3262,
+                          "name": "token0",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3248,
+                          "src": "1241:6:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 3263,
+                          "name": "token1",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3250,
+                          "src": "1269:6:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "id": 3264,
+                          "name": "fee",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3252,
+                          "src": "1294:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint24",
+                            "typeString": "uint24"
+                          }
+                        },
+                        {
+                          "id": 3265,
+                          "name": "tickSpacing",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3254,
+                          "src": "1324:11:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_int24",
+                            "typeString": "int24"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_uint24",
+                            "typeString": "uint24"
+                          },
+                          {
+                            "typeIdentifier": "t_int24",
+                            "typeString": "int24"
+                          }
+                        ],
+                        "id": 3260,
+                        "name": "Parameters",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3239,
+                        "src": "1178:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Parameters_$3239_storage_ptr_$",
+                          "typeString": "type(struct UniswapV3PoolDeployer.Parameters storage pointer)"
+                        }
+                      },
+                      "id": 3266,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [
+                        "factory",
+                        "token0",
+                        "token1",
+                        "fee",
+                        "tickSpacing"
+                      ],
+                      "nodeType": "FunctionCall",
+                      "src": "1178:168:5",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Parameters_$3239_memory_ptr",
+                        "typeString": "struct UniswapV3PoolDeployer.Parameters memory"
+                      }
+                    },
+                    "src": "1165:181:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Parameters_$3239_storage",
+                      "typeString": "struct UniswapV3PoolDeployer.Parameters storage ref"
+                    }
+                  },
+                  "id": 3268,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1165:181:5"
+                },
+                {
+                  "expression": {
+                    "id": 3285,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3269,
+                      "name": "pool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3257,
+                      "src": "1356:4:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "argumentTypes": [],
+                              "id": 3273,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "NewExpression",
+                              "src": "1384:17:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_UniswapV3Pool_$3222_$",
+                                "typeString": "function () returns (contract UniswapV3Pool)"
+                              },
+                              "typeName": {
+                                "id": 3272,
+                                "name": "UniswapV3Pool",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 3222,
+                                "src": "1388:13:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_UniswapV3Pool_$3222",
+                                  "typeString": "contract UniswapV3Pool"
+                                }
+                              }
+                            },
+                            "id": 3282,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "names": [
+                              "salt"
+                            ],
+                            "nodeType": "FunctionCallOptions",
+                            "options": [
+                              {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "id": 3277,
+                                        "name": "token0",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 3248,
+                                        "src": "1446:6:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      },
+                                      {
+                                        "id": 3278,
+                                        "name": "token1",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 3250,
+                                        "src": "1454:6:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      },
+                                      {
+                                        "id": 3279,
+                                        "name": "fee",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 3252,
+                                        "src": "1462:3:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint24",
+                                          "typeString": "uint24"
+                                        }
+                                      }
+                                    ],
+                                    "expression": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        },
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        },
+                                        {
+                                          "typeIdentifier": "t_uint24",
+                                          "typeString": "uint24"
+                                        }
+                                      ],
+                                      "expression": {
+                                        "id": 3275,
+                                        "name": "abi",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": -1,
+                                        "src": "1435:3:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_magic_abi",
+                                          "typeString": "abi"
+                                        }
+                                      },
+                                      "id": 3276,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "memberName": "encode",
+                                      "nodeType": "MemberAccess",
+                                      "src": "1435:10:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
+                                        "typeString": "function () pure returns (bytes memory)"
+                                      }
+                                    },
+                                    "id": 3280,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "kind": "functionCall",
+                                    "lValueRequested": false,
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "1435:31:5",
+                                    "tryCall": false,
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_bytes_memory_ptr",
+                                      "typeString": "bytes memory"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_bytes_memory_ptr",
+                                      "typeString": "bytes memory"
+                                    }
+                                  ],
+                                  "id": 3274,
+                                  "name": "keccak256",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -8,
+                                  "src": "1425:9:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                                    "typeString": "function (bytes memory) pure returns (bytes32)"
+                                  }
+                                },
+                                "id": 3281,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1425:42:5",
+                                "tryCall": false,
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bytes32",
+                                  "typeString": "bytes32"
+                                }
+                              }
+                            ],
+                            "src": "1384:97:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_UniswapV3Pool_$3222_$salt",
+                              "typeString": "function () returns (contract UniswapV3Pool)"
+                            }
+                          },
+                          "id": 3283,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1384:99:5",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_UniswapV3Pool_$3222",
+                            "typeString": "contract UniswapV3Pool"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_UniswapV3Pool_$3222",
+                            "typeString": "contract UniswapV3Pool"
+                          }
+                        ],
+                        "id": 3271,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1363:7:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 3270,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1363:7:5",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 3284,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1363:130:5",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1356:137:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 3286,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1356:137:5"
+                },
+                {
+                  "expression": {
+                    "id": 3288,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "delete",
+                    "prefix": true,
+                    "src": "1503:17:5",
+                    "subExpression": {
+                      "id": 3287,
+                      "name": "parameters",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3243,
+                      "src": "1510:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Parameters_$3239_storage",
+                        "typeString": "struct UniswapV3PoolDeployer.Parameters storage ref"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3289,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1503:17:5"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3244,
+              "nodeType": "StructuredDocumentation",
+              "src": "445:531:5",
+              "text": "@dev Deploys a pool with the given parameters by transiently setting the parameters storage slot and then\n clearing it after deploying the pool.\n @param factory The contract address of the Uniswap V3 factory\n @param token0 The first token of the pool by address sort order\n @param token1 The second token of the pool by address sort order\n @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip\n @param tickSpacing The spacing between usable ticks"
+            },
+            "id": 3291,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3255,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3246,
+                  "mutability": "mutable",
+                  "name": "factory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3291,
+                  "src": "1006:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3245,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1006:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3248,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3291,
+                  "src": "1031:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3247,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1031:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3250,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3291,
+                  "src": "1055:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3249,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1055:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3252,
+                  "mutability": "mutable",
+                  "name": "fee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3291,
+                  "src": "1079:10:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 3251,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1079:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3254,
+                  "mutability": "mutable",
+                  "name": "tickSpacing",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3291,
+                  "src": "1099:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 3253,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1099:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "996:126:5"
+            },
+            "returnParameters": {
+              "id": 3258,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3257,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3291,
+                  "src": "1141:12:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3256,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1141:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1140:14:5"
+            },
+            "scope": 3292,
+            "src": "981:546:5",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3293,
+        "src": "144:1385:5"
+      }
+    ],
+    "src": "37:1493:5"
+  }
+}

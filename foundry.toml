@@ -1,6 +1,3 @@
 [default]
 src = 'packages/hardhat/contracts'
 
-test = 'foundry-tests'
-
-remappings = ['TestERC20=packages/hardhat/contracts/TestERC20.sol']
